@@ -1,0 +1,36 @@
+.map-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.route-info {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.map-wrapper {
+    flex: 1;
+    height: 60vh; /* Adjust height for small screens */
+    width: 100%;
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+    .map-container {
+        flex-direction: row;
+    }
+
+    .route-info {
+        width: 25%;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .map-wrapper {
+        height: 100vh;
+    }
+}
