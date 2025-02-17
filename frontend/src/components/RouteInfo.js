@@ -1,9 +1,8 @@
 import React from "react";
-import "./RouteInfo.css";
 
 const RouteInfo = ({ travelTime, directions }) => {
     return (
-        <div className="route-info-container">
+        <div style={{ width: "25%", padding: "10px", backgroundColor: "#f0f0f0" }}>
             <h3>Route Information</h3>
             {travelTime && <p>Estimated Travel Time: {(travelTime / 60).toFixed(2)} minutes</p>}
             {directions.length > 0 && (
